@@ -111,7 +111,7 @@ tds.model.FA.plot <- ggplot(
   ggtitle("Women") +
   scale_x_continuous("Age (months)",
     breaks = seq(0, 36, 6), limits = c(0, 36)) +
-  scale_y_continuous("Estimated TCDL min/hr",
+  scale_y_continuous("Estimated TCDS min/hr",
     breaks = seq(0, 10, 2), limits = c(0, 15)) +
   coord_cartesian(ylim = c(0, 10)) +
   theme(
@@ -160,7 +160,7 @@ tds.model.MA.plot <- ggplot(
   ggtitle("Men") +
   scale_x_continuous("Age (months)",
     breaks = seq(0, 36, 6), limits = c(0, 36)) +
-  scale_y_continuous("Estimated TCDL min/hr",
+  scale_y_continuous("Estimated TCDS min/hr",
     breaks = seq(0, 10, 2), limits = c(0, 15)) +
   coord_cartesian(ylim = c(0, 10)) +
   theme(
@@ -209,7 +209,7 @@ tds.model.OC.plot <- ggplot(
   ggtitle("Other children") +
   scale_x_continuous("Age (months)",
     breaks = seq(0, 36, 6), limits = c(0, 36)) +
-  scale_y_continuous("Estimated TCDL min/hr",
+  scale_y_continuous("Estimated TCDS min/hr",
     breaks = seq(0, 10, 2), limits = c(0, 15)) +
   coord_cartesian(ylim = c(0, 10)) +
   theme(
@@ -256,7 +256,7 @@ tds.model.AllSpkrs.plot <- ggplot(
   ggtitle("All speaker types") +
   scale_x_continuous("Age (months)",
     breaks = seq(0, 36, 6), limits = c(0, 36)) +
-  scale_y_continuous("Estimated TCDL min/hr",
+  scale_y_continuous("Estimated TCDS min/hr",
     breaks = seq(0, 10, 2), limits = c(0, 15)) +
   coord_cartesian(ylim = c(0, 10)) +
   theme(
@@ -269,7 +269,7 @@ tds.model.AllSpkrs.plot /
 (tds.model.FA.plot | tds.model.MA.plot | tds.model.OC.plot)
 
 ggsave(
-  "tdl-estimates-plot.png",
+  "tds-estimates-plot.png",
   plot = last_plot(),
   device = "png",
   path = "plots",

@@ -1,0 +1,11 @@
+Predictor;Hypothesized outcome;Supported
+Count model;;
+Target child age;Decrease in ADS rate with age*;Yes
+Talker type;Women > men, children*;Yes
+# Talkers present;More talkers leads to more ADS*;Yes
+Corpus;Argentinian Spanish, Tseltal, and Yélî Dnye show more ADS than NA English;No
+Talker type x Corpus;More ADS from children in Argentinian Spanish, Tseltal, and Yélî Dnye than NA English, no specific predictions regarding men;No—UK English only
+Target child age x Corpus;Bigger ADS decrease across age in Argentinian Spanish, Tseltal, and Yélî Dnye;No
+Zero-inflation model;;
+Target child age;More zero-ADS clips for older children;(untested due to convergence issues)
+Corpus;More zero-ADS clips in NA English than Argentinian Spanish, Tseltal, and Yélî Dnye;No

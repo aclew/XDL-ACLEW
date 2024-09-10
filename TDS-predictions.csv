@@ -1,0 +1,11 @@
+Predictor;Hypothesized outcome;Supported
+Count model;;
+Target child age;No change in TCDS rate with age*;Yes
+Talker type;Women > men, children*;Yes
+# Talkers present;More talkers leads to more TCDS*;Yes
+Corpus;NA English shows more TCDS than Argentinian Spanish, Tseltal, and Yélî Dnye;Yélî Dnye only
+Talker type x Corpus;More TCDS from children in Argentinian Spanish, Tseltal, and Yélî Dnye; more TCDS from children in all four corpora versus NA English, more TCDS from men in Argentinian Spanish and Yélî Dnye versus NA English
+Target child age x Talker type;More TCDS from children for older target children;Yes
+Zero-inflation model;;
+Target child age;More zero-TCDS clips for young children (e.g., during naps);No
+Corpus;More zero-TCDS clips in Argentinian Spanish, Tseltal, and Yélî Dnye than NA English;No

@@ -111,7 +111,7 @@ ads.model.FA.plot <- ggplot(
   ggtitle("Women") +
   scale_x_continuous("Age (months)",
     breaks = seq(0, 36, 6), limits = c(0, 36)) +
-  scale_y_continuous("Estimated ADL min/hr",
+  scale_y_continuous("Estimated ADS min/hr",
     breaks = seq(0, 30, 5), limits = c(0, 40)) +
   coord_cartesian(ylim = c(0, 30)) +
   theme(
@@ -160,7 +160,7 @@ ads.model.MA.plot <- ggplot(
   ggtitle("Men") +
   scale_x_continuous("Age (months)",
     breaks = seq(0, 36, 6), limits = c(0, 36)) +
-  scale_y_continuous("Estimated ADL min/hr",
+  scale_y_continuous("Estimated ADS min/hr",
     breaks = seq(0, 30, 5), limits = c(0, 40)) +
   coord_cartesian(ylim = c(0, 30)) +
   theme(
@@ -209,7 +209,7 @@ ads.model.OC.plot <- ggplot(
   ggtitle("Other children") +
   scale_x_continuous("Age (months)",
     breaks = seq(0, 36, 6), limits = c(0, 36)) +
-  scale_y_continuous("Estimated ADL min/hr",
+  scale_y_continuous("Estimated ADS min/hr",
     breaks = seq(0, 30, 5), limits = c(0, 40)) +
   coord_cartesian(ylim = c(0, 30)) +
   theme(
@@ -256,7 +256,7 @@ ads.model.AllSpkrs.plot <- ggplot(
   ggtitle("All speaker types") +
   scale_x_continuous("Age (months)",
     breaks = seq(0, 36, 6), limits = c(0, 36)) +
-  scale_y_continuous("Estimated ADL min/hr",
+  scale_y_continuous("Estimated ADS min/hr",
     breaks = seq(0, 30, 5), limits = c(0, 40)) +
   coord_cartesian(ylim = c(0, 30)) +
   theme(
@@ -269,7 +269,7 @@ ads.model.AllSpkrs.plot /
 (ads.model.FA.plot | ads.model.MA.plot | ads.model.OC.plot)
 
 ggsave(
-  "adl-estimates-plot.png",
+  "ads-estimates-plot.png",
   plot = last_plot(),
   device = "png",
   path = "plots/",
